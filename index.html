@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Ashmina Rai · MERN Stack Developer</title>
+  <meta name="description" content="Ashmina Rai is a MERN stack developer based in Kansas City who builds full-stack applications and refined user interfaces." />
+  <meta name="theme-color" content="#0a192f" />
+  <meta name="color-scheme" content="dark" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ashmina Rai · MERN Stack Developer" />
+  <meta property="og:description" content="I build things for the web." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230a192f'/%3E%3Ctext x='50%25' y='62%25' text-anchor='middle' font-family='ui-monospace,monospace' font-size='32' font-weight='700' fill='%2364ffda'%3EA%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ===== Loader ===== -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <svg class="loader__logo" viewBox="0 0 100 100" width="84" height="84">
+      <polygon class="loader__hex" points="50,4 92,28 92,72 50,96 8,72 8,28" fill="none" stroke="#64ffda" stroke-width="3"/>
+      <text x="50" y="58" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="34" font-weight="700" fill="#64ffda">A</text>
+    </svg>
+  </div>
+
+  <!-- ===== Skip link ===== -->
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <!-- ===== Header / Nav ===== -->
+  <header class="header" id="header">
+    <nav class="nav" aria-label="Primary">
+      <a href="#top" class="nav__logo" aria-label="Home">
+        <svg viewBox="0 0 100 100" width="44" height="44" class="nav__logo-svg">
+          <polygon points="50,4 92,28 92,72 50,96 8,72 8,28" fill="none" stroke="#64ffda" stroke-width="3"/>
+          <text x="50" y="60" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="38" font-weight="700" fill="#64ffda">A</text>
+        </svg>
+      </a>
+
+      <div class="nav__right">
+        <ol class="nav__list" id="navList">
+          <li><a href="#about"><span>01.</span> About</a></li>
+          <li><a href="#experience"><span>02.</span> Experience</a></li>
+          <li><a href="#work"><span>03.</span> Work</a></li>
+          <li><a href="#contact"><span>04.</span> Contact</a></li>
+        </ol>
+        <a class="resume-btn" href="https://github.com/ashminarai" target="_blank" rel="noopener">Resume</a>
+      </div>
+
+      <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== Mobile menu ===== -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__inner">
+      <ol>
+        <li><a href="#about"><span>01.</span><br/>About</a></li>
+        <li><a href="#experience"><span>02.</span><br/>Experience</a></li>
+        <li><a href="#work"><span>03.</span><br/>Work</a></li>
+        <li><a href="#contact"><span>04.</span><br/>Contact</a></li>
+      </ol>
+      <a class="resume-btn" href="https://github.com/ashminarai" target="_blank" rel="noopener">Resume</a>
+    </nav>
+  </div>
+
+  <!-- ===== Side rails ===== -->
+  <aside class="rail rail--left" aria-hidden="true">
+    <ul>
+      <li>
+        <a href="https://github.com/ashminarai" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://linkedin.com/in/ashmina-rai" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="ashminarai.github.io" target="_blank" rel="noopener" aria-label="Website">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:ashminayamphurai@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2Z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </li>
+    </ul>
+  </aside>
+
+  <aside class="rail rail--right" aria-hidden="true">
+    <a href="mailto:ashminayamphurai@gmail.com">ashminayamphurai@gmail.com</a>
+  </aside>
+
+  <!-- ===== Main ===== -->
+  <main id="content">
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="top">
+      <p class="hero__hi" data-reveal>Hi, my name is</p>
+      <h1 class="hero__name" data-reveal>Ashmina Rai.</h1>
+      <h2 class="hero__tag" data-reveal>I build things for the web.</h2>
+      <p class="hero__intro" data-reveal>
+        I'm a software engineer specializing in the
+        <span class="hl">MERN stack</span> — building scalable full-stack
+        applications and the careful interfaces that wrap them. Currently
+        pursuing my Master's in Computer Science at
+        <a href="https://www.avila.edu" target="_blank" rel="noopener">Avila University</a>
+        in Kansas City, with a focus on production-grade web applications.
+      </p>
+      <a class="hero__cta" href="#work" data-reveal>Check out my work</a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about" data-reveal>
+      <h2 class="section-heading"><span class="section-num">01.</span> About Me</h2>
+
+      <div class="about__grid">
+        <div class="about__text">
+          <p>
+            Hello! I'm Ashmina, a developer who enjoys building things
+            that live on the internet. My interest in development started
+            back in 2019 when I enrolled in a BSc Computing program at
+            <a href="https://www.londonmet.ac.uk" target="_blank" rel="noopener">London Metropolitan University</a> —
+            turns out hacking together small websites taught me a lot about HTML &amp; CSS.
+          </p>
+          <p>
+            Fast-forward to today, and I've had the privilege of working at
+            <a href="#experience" data-section>an early-stage startup</a>,
+            <a href="#experience" data-section>a software studio</a>, and
+            <a href="#experience" data-section>a design institute</a> — leading UI/UX work,
+            shipping REST &amp; GraphQL APIs, and mentoring interns along the way.
+            My main focus these days is building accessible, human-centered products at
+            <a href="https://www.avila.edu" target="_blank" rel="noopener">Avila University</a>
+            while finishing my Master's in Computer Science.
+          </p>
+          <p>Here are a few technologies I've been working with recently:</p>
+          <ul class="about__stack">
+            <li>JavaScript (ES6+)</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
+
+        <div class="about__photo">
+          <div class="photo-frame">
+            <div class="photo-frame__img">
+              <img src="assets/profile.jpg" alt="Portrait of Ashmina Rai" />
+            </div>
+            <div class="photo-frame__border" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="section experience" id="experience" data-reveal>
+      <h2 class="section-heading"><span class="section-num">02.</span> Where I've Worked</h2>
+
+      <div class="tabs">
+        <div class="tabs__list" role="tablist" aria-label="Job experience">
+          <button role="tab" class="tabs__tab is-active" aria-selected="true" data-tab="0">Code In Nepal</button>
+          <button role="tab" class="tabs__tab" aria-selected="false" data-tab="1">Sajilo Software</button>
+          <button role="tab" class="tabs__tab" aria-selected="false" data-tab="2">Cubical Institute</button>
+          <span class="tabs__indicator" id="tabsIndicator" aria-hidden="true"></span>
+        </div>
+
+        <div class="tabs__panels">
+          <div class="tabs__panel is-active" role="tabpanel" data-panel="0">
+            <h3>MERN Stack Developer <span class="tabs__company">@ <a href="#" target="_blank" rel="noopener">Code In Nepal</a></span></h3>
+            <p class="tabs__when">October 2023 — September 2024</p>
+            <ul>
+              <li>Developed scalable full-stack applications using React, Node.js, Express, and MongoDB.</li>
+              <li>Led UI/UX enhancements with Tailwind CSS and Styled Components — measurably lifting user engagement.</li>
+              <li>Built and optimized RESTful APIs and GraphQL endpoints, reducing API response time by 30%.</li>
+              <li>Integrated AWS services for efficient cloud deployment and CI workflows.</li>
+              <li>Acted as hiring manager, recruiting and mentoring a team of junior interns.</li>
+            </ul>
+          </div>
+
+          <div class="tabs__panel" role="tabpanel" data-panel="1">
+            <h3>Frontend Developer Intern <span class="tabs__company">@ <a href="#" target="_blank" rel="noopener">Sajilo Software</a></span></h3>
+            <p class="tabs__when">July 2021 — September 2021</p>
+            <ul>
+              <li>Developed dynamic, reusable React components, increasing app modularity across multiple internal tools.</li>
+              <li>Implemented state management with Redux to ensure smooth, predictable data flow.</li>
+              <li>Designed responsive UI with SASS, Bootstrap, and Tailwind CSS for cross-device consistency.</li>
+              <li>Conducted code reviews, debugging sessions, and unit testing — keeping the codebase healthy.</li>
+            </ul>
+          </div>
+
+          <div class="tabs__panel" role="tabpanel" data-panel="2">
+            <h3>Web Designer <span class="tabs__company">@ <a href="#" target="_blank" rel="noopener">Cubical Institute</a></span></h3>
+            <p class="tabs__when">February 2021 — April 2021</p>
+            <ul>
+              <li>Designed and developed cross-platform e-commerce applications.</li>
+              <li>Created interactive UI elements for web apps using Figma and Adobe Creative Suite.</li>
+              <li>Assisted in QA testing to identify and resolve UI/UX issues before release.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WORK / FEATURED PROJECTS ===== -->
+    <section class="section work" id="work" data-reveal>
+      <h2 class="section-heading"><span class="section-num">03.</span> Some Things I've Built</h2>
+
+      <ul class="featured">
+        <!-- Project 1 -->
+        <li class="featured__item">
+          <div class="featured__image">
+            <a href="https://github.com/ashminarai" target="_blank" rel="noopener" class="featured__image-link">
+              <div class="mock mock--dashboard" aria-hidden="true">
+                <div class="mock__bar">
+                  <span></span><span></span><span></span>
+                  <span class="mock__url">restaurant-mgmt.local</span>
+                </div>
+                <div class="mock__body">
+                  <aside class="mock__side">
+                    <div class="mock__logo">RM</div>
+                    <div class="mock__navitem is-active"></div>
+                    <div class="mock__navitem"></div>
+                    <div class="mock__navitem"></div>
+                    <div class="mock__navitem"></div>
+                  </aside>
+                  <div class="mock__main">
+                    <div class="mock__stats">
+                      <div class="mock__card"><span>$24.8k</span><em>Revenue</em></div>
+                      <div class="mock__card"><span>318</span><em>Orders</em></div>
+                      <div class="mock__card"><span>92%</span><em>Stock</em></div>
+                    </div>
+                    <div class="mock__table">
+                      <div class="mock__row"><i></i><i></i><i></i><i></i></div>
+                      <div class="mock__row"><i></i><i></i><i></i><i></i></div>
+                      <div class="mock__row"><i></i><i></i><i></i><i></i></div>
+                      <div class="mock__row"><i></i><i></i><i></i><i></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="featured__content">
+            <p class="featured__over">Featured Project</p>
+            <h3 class="featured__title"><a href="https://github.com/ashminarai" target="_blank" rel="noopener">Restaurant Management System</a></h3>
+            <div class="featured__desc">
+              <p>
+                A full-stack platform for real-time inventory, staff, and asset
+                management. Automated payroll, asset tracking, and loss-prevention
+                features give operators a live view of their business — turning
+                manual spreadsheets into actionable, decision-ready data.
+              </p>
+            </div>
+            <ul class="featured__tech">
+              <li>React</li><li>Node.js</li><li>Express</li><li>MongoDB</li>
+            </ul>
+            <div class="featured__links">
+              <a href="https://github.com/ashminarai" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="https://github.com/ashminarai" target="_blank" rel="noopener" aria-label="External">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Project 2 (reversed) -->
+        <li class="featured__item is-reversed">
+          <div class="featured__image">
+            <a href="https://github.com/ashminarai" target="_blank" rel="noopener" class="featured__image-link">
+              <div class="mock mock--realtor" aria-hidden="true">
+                <div class="mock__bar">
+                  <span></span><span></span><span></span>
+                  <span class="mock__url">realtor-clone.app</span>
+                </div>
+                <div class="mock__body mock__body--realtor">
+                  <div class="mock__search">
+                    <span class="mock__search-input"></span>
+                    <span class="mock__chip"></span>
+                    <span class="mock__chip"></span>
+                  </div>
+                  <div class="mock__grid">
+                    <div class="mock__listing"><div class="mock__photo a"></div><span>$540k</span></div>
+                    <div class="mock__listing"><div class="mock__photo b"></div><span>$720k</span></div>
+                    <div class="mock__listing"><div class="mock__photo c"></div><span>$385k</span></div>
+                    <div class="mock__listing"><div class="mock__photo d"></div><span>$1.2m</span></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="featured__content">
+            <p class="featured__over">Featured Project</p>
+            <h3 class="featured__title"><a href="https://github.com/ashminarai" target="_blank" rel="noopener">Realtor — Real Estate App</a></h3>
+            <div class="featured__desc">
+              <p>
+                A Realtor.com-inspired property platform with browse, search,
+                and listing flows wired up to a Firebase real-time backend.
+                Designed with a focus on calm typography, instant feedback,
+                and a search experience that feels effortless on mobile.
+              </p>
+            </div>
+            <ul class="featured__tech">
+              <li>React</li><li>Tailwind CSS</li><li>Firebase</li>
+            </ul>
+            <div class="featured__links">
+              <a href="https://github.com/ashminarai" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="https://github.com/ashminarai" target="_blank" rel="noopener" aria-label="External">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Project 3 -->
+        <li class="featured__item">
+          <div class="featured__image">
+            <a href="https://github.com/ashminarai" target="_blank" rel="noopener" class="featured__image-link">
+              <div class="mock mock--music" aria-hidden="true">
+                <div class="mock__bar">
+                  <span></span><span></span><span></span>
+                  <span class="mock__url">music-player.app</span>
+                </div>
+                <div class="mock__body mock__body--music">
+                  <div class="mock__album"></div>
+                  <div class="mock__meta">
+                    <div class="mock__track"></div>
+                    <div class="mock__artist"></div>
+                  </div>
+                  <div class="mock__wave">
+                    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                  </div>
+                  <div class="mock__controls">
+                    <span class="mock__ctrl"></span>
+                    <span class="mock__ctrl mock__ctrl--play"></span>
+                    <span class="mock__ctrl"></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="featured__content">
+            <p class="featured__over">Featured Project</p>
+            <h3 class="featured__title"><a href="https://github.com/ashminarai" target="_blank" rel="noopener">Hum — A Music Player</a></h3>
+            <div class="featured__desc">
+              <p>
+                A lightweight player with play/pause, volume control, and a
+                dynamic search experience for instant song discovery. Includes
+                user profile management — built to feel responsive on the
+                first keystroke and stay out of the way after that.
+              </p>
+            </div>
+            <ul class="featured__tech">
+              <li>React</li><li>Web Audio API</li><li>State Mgmt</li>
+            </ul>
+            <div class="featured__links">
+              <a href="https://github.com/ashminarai" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="https://github.com/ashminarai" target="_blank" rel="noopener" aria-label="External">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Other Noteworthy -->
+      <h3 class="archive__heading">Other Noteworthy Projects</h3>
+      <a href="https://github.com/ashminarai" target="_blank" rel="noopener" class="archive__link">view the archive →</a>
+
+      <ul class="archive">
+        <li class="card" data-reveal>
+          <div class="card__top">
+            <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <div class="card__links">
+              <a href="https://github.com/ashminarai" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h4 class="card__title"><a href="https://github.com/ashminarai" target="_blank" rel="noopener">Advanced React — Meta Certification</a></h4>
+          <p class="card__desc">Capstone projects from the Meta Android Developer specialization, exploring advanced React patterns, hooks, and component composition strategies.</p>
+          <ul class="card__tech"><li>React</li><li>JSX</li><li>Hooks</li></ul>
+        </li>
+
+        <li class="card" data-reveal>
+          <div class="card__top">
+            <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <div class="card__links">
+              <a href="https://github.com/ashminarai" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h4 class="card__title"><a href="https://github.com/ashminarai" target="_blank" rel="noopener">Hult Prize — Food Sustainability</a></h4>
+          <p class="card__desc">A team submission for the on-campus Hult Prize at Itahari International College — design thinking workshops, business model canvases, and an MVP prototype.</p>
+          <ul class="card__tech"><li>Design Thinking</li><li>Figma</li><li>Prototyping</li></ul>
+        </li>
+
+        <li class="card" data-reveal>
+          <div class="card__top">
+            <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <div class="card__links">
+              <a href="https://github.com/ashminarai" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h4 class="card__title"><a href="https://github.com/ashminarai" target="_blank" rel="noopener">BSc Computing — Final Project</a></h4>
+          <p class="card__desc">Capstone project from my First-Class Honours BSc at London Metropolitan University — a full-stack web application demonstrating production patterns.</p>
+          <ul class="card__tech"><li>JavaScript</li><li>Node.js</li><li>MySQL</li></ul>
+        </li>
+
+        <li class="card" data-reveal>
+          <div class="card__top">
+            <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <div class="card__links">
+              <a href="https://github.com/ashminarai" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h4 class="card__title"><a href="https://github.com/ashminarai" target="_blank" rel="noopener">Leo Club — Community Platform</a></h4>
+          <p class="card__desc">Internal coordination tools built for the Leo Club of Everest Sunshine; recognized with the Promising New Member Award for organizational initiative.</p>
+          <ul class="card__tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </li>
+
+        <li class="card" data-reveal>
+          <div class="card__top">
+            <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <div class="card__links">
+              <a href="https://github.com/ashminarai" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h4 class="card__title"><a href="https://github.com/ashminarai" target="_blank" rel="noopener">E-commerce UI Library</a></h4>
+          <p class="card__desc">A reusable component library born from the cross-platform e-commerce work at Cubical Institute. Built around Figma tokens and adaptable themes.</p>
+          <ul class="card__tech"><li>Figma</li><li>SCSS</li><li>Bootstrap</li></ul>
+        </li>
+
+        <li class="card" data-reveal>
+          <div class="card__top">
+            <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <div class="card__links">
+              <a href="https://github.com/ashminarai" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h4 class="card__title"><a href="https://github.com/ashminarai" target="_blank" rel="noopener">Portfolio Site v1</a></h4>
+          <p class="card__desc">The first version of this very website — hand-coded with vanilla HTML, CSS, and JavaScript. A space to experiment with motion, typography, and layout.</p>
+          <ul class="card__tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact" data-reveal>
+      <p class="contact__num">04. What's Next?</p>
+      <h2 class="contact__title">Get In Touch</h2>
+      <p class="contact__desc">
+        I'm currently looking for new opportunities — full-time MERN
+        roles, freelance projects, and interesting collaborations. My
+        inbox is always open: whether you have a question, want to share
+        an idea, or just want to say hi, I'll do my best to get back to you.
+      </p>
+      <a href="mailto:ashminayamphurai@gmail.com" class="contact__btn">Say Hello</a>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <ul class="footer__social" aria-label="Social">
+      <li><a href="https://github.com/ashminarai" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a></li>
+      <li><a href="https://linkedin.com/in/ashmina-rai" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></li>
+      <li><a href="mailto:ashminayamphurai@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2Z"/><polyline points="22,6 12,13 2,6"/></svg></a></li>
+    </ul>
+    <p class="footer__credit">
+      Designed &amp; Built by Ashmina Rai
+      <span class="footer__sub">© <span id="year"></span> · v2.0</span>
+    </p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
